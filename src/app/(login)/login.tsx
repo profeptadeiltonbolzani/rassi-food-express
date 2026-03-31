@@ -1,9 +1,9 @@
-import BoxInput from "@/src/components/Boxinput";
+import BoxInput from "@/src/components/BoxInput";
 import Button from "@/src/components/Button";
 import { useRouter } from "expo-router";
 import { Text, TouchableOpacity, View } from "react-native";
 
-export default function Index() {
+export default function Login() {
 
     const router = useRouter();
 
@@ -17,7 +17,7 @@ export default function Index() {
                 <BoxInput label="Senha" placeholder="Digite uma senha segura" isPassword />
             </View>
             <View className=" w-full pt-10 mb-28">
-                <Button label="Acessar" url=""></Button>
+                <Button label="Acessar" url="../home"></Button>
             </View>
             <TouchableOpacity onPress={() => router.navigate('./register')}>
                 <Text className="text-2xl font-normal">
