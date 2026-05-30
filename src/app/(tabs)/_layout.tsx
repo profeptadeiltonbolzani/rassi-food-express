@@ -51,7 +51,7 @@ export default function TabsLayout() {
         headerShadowVisible: false
       }} />
     <Tabs.Screen
-      name="pedido"
+      name="pedidos"
       options={{
         tabBarLabel: () => null,
         tabBarIcon: ({ focused }) => (

@@ -3,7 +3,7 @@ import BoxInput from "@/src/components/BoxInput";
 import Categorias from "@/src/components/Categorias";
 import Lojas from "@/src/components/Lojas";
 import { Text, View } from "react-native";
-import { banners, categorias, lojas } from "../../constants/data.js";
+import { banners, categorias } from "../../constants/data";
 
 export default function Home() {
     return (
@@ -17,7 +17,7 @@ export default function Home() {
                 <Text className="text-xl font-bold">
                     Destaques
                 </Text>
-                <Lojas data={lojas} />
+                <Lojas />
             </View>
         </View >
     );
